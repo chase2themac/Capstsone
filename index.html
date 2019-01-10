@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="header" role="heading"> Search the world's news or your preferred topic</h1>
+
+<form class="allTheOptions">
+<fieldset class="allOrNothing">
+  <legend class="question">Which do you prefer? Everything, or just Top headlines?</legend>
+  <input type="radio" name="radioButton1" value="everything?">
+  <label for="radioButton1">Everything?</label>
+  <br>
+  <input type="radio" name="radioButton2" value="top-headlines?" checked>
+  <label for="radioButton2">Top Headlines?</label>
+  <br>
+</fieldset>
+
+ <label for="searchQ">Do you have something you wish to look up specifically?</label>
+ <br>
+ <input class="searchQ" name="searchQ" type="text" placeholder="Topic of interest">
+<br>
+ <label for="countryCode">Search specific country news via two character country code</label>
+ <br>
+  <input class="countrySearch" name="countryCode" type="text" placeholder="US,DE,JP,FR,IT">
+
+
+
+<fieldset class="categories">
+  <legend class="question">Maybe you have a category specific search?</legend>
+  <input class="catSearch" type="radio" name="cats1" value="entertainment">
+  <label for="cats1">Entertainment</label>
+  <br>
+  <input class="catSearch" type="radio" name="cats2" value="business">
+  <label for="cats2">Business</label>
+  <br>
+  <input class="catSearch" type="radio" name="cats3" value="general">
+  <label for="cats3">General</label>
+  <br>
+  <input class="catSearch" type="radio" name="cats4" value="health">
+  <label for="cats4">Health</label>
+  <br>
+  <input class="catSearch" type="radio" name="cats5" value="science">
+  <label for="cats5">Science</label>
+  <br>
+  <input class="catSearch" type="radio" name="cats6" value="technology">
+  <label for="cats6">Technology</label>
+  <br>
+  <input class="catSearch" type="radio" name="cats7" value="sports">  <label for="cats7">Sports</label>
+  <br>
+</fieldset>
+
+  <label for="numResult">How many articles do you wish to see  1-100?</label>
+  <br>
+  <input class="maxResults" type="number" value="10" name="numResults"
+</form>
+<p class="err"></p>
+<section class="hidden" id="resultsSection">
+ <h3> News Results!</h3>
+ <ul class="printResults>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
