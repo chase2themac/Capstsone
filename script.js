@@ -4,15 +4,22 @@ const base="https://newsapi.org/v2/"
 const key="apiKey=27eda7ba8e8f496bb3360c5d192f2299"
 
 function formatParams(){
-  let params= [];
-  if ($('#option1or2').val()) params.push($('#option1or2').val());
-  if ($('.searchQ').val() != null) params.push("q="+$('searchQ').val()+"&");
-  if ($('.countrySearch').val() != null) params.push("country="
+  let params= [];  
+
+  if ($('#option1or2').val() != null) params.push($('#option1or2').val());
+
+  if ($('.searchQ').val() != "") params.push("q="+$('.searchQ').val()+"&");
+
+  if ($('.countrySearch').val() != "") params.push("country="
   +$('.countrySearch').val()+"&");
+
   if ($('#catagories').val() != "none")params.push("catagory="+$('#catagories').val()+"&");
+
   if ($('.maxResults').val() != null)params.push("pageSize="+$('.maxResults').val()+"&");
 
-  return params.join();
+
+  return params.join("");
+
 }
 
 function displayResults(responseJson){
@@ -23,12 +30,14 @@ function displayResults(responseJson){
 
   for (let i = 0; i < responseJson.articles.length; i++){
 
-    $('.actualResults').append(
-      `<li><h3>${responseJson.articles[i].fullName}</h3>
+    $('.printResults').append(
+      `<li><h3><a href=${responseJson.articles[i].url}>${responseJson.articles[i].title}</a></h3>
+      <p>${responseJson.articles[i].author}</p>
+      <p>${responseJson.articles[i].publishedAt}</p>
+      <img src='${responseJson.articles[i].urlToImage}' class="pParker" alt="photo from article of news"/>
       <p>${responseJson.articles[i].description}</p>
-      <p> <a href=${responseJson.articles[i].url}>${responseJson.articles[i].url}</a></p>
       </li>`
-    )};
+    );}
   
   $('#resultsSection').removeClass('hidden');
 }
@@ -52,8 +61,9 @@ fetch(url)
     }
 
 function gettemTiger(){
- $('form').submit(event => {
+ $('.allTheOptions').submit(event => {
     event.preventDefault();
-    getTheNews();});
+    getTheNews(formatParams());
+    });
 }
 $(gettemTiger());
