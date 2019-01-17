@@ -1,6 +1,17 @@
 *{
-    background: blanchedalmond;
+
     box-sizing: border-box;
+  }
+  html{ 
+    background: url('https://journalistsresource.org/wp-content/uploads/2018/06/bundle-1853667_1280-720x480.jpg?x12809') no-repeat center center fixed;
+  background-size:cover;
+  color:rgb(62, 2, 2);
+  
+  
+  }
+  
+  .header{
+    background:rgb(248, 243, 220);
   }
   
   .hidden{
@@ -11,26 +22,56 @@
     border:3px solid black;
     
   }
+  .err{
+     color:aliceblue;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  }
+  .nR{
+    color:aliceblue;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  }
+  .printResults{
+    color:aliceblue;
+    list-style:none;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  }
   .pParker{
-    float:left; 
-    border:1px solid black;
+    float:right; 
+  
     padding-top: 20px;
     padding-bottom:20px;
+    width:270px;
+    height:300px;
   }
   
-  .hmm{
-    display:inline;
+  section{
+    display:inline-block;
+  }
+  a{
+   color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(127, 56, 56);
   }
   .articleHead{
+     color:rgb(0, 0, 0);
+    text-shadow: 0px 0px 0px rgb(32, 1, 1);
+    font-size:18px;
     text-align:center;
-    padding-top:20px;
     border:1px solid black;
+    background: url('https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center  ;
+  background-size:cover;
   }
   .articleBody{
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+    font-size:18px;
     text-align:center;
-    padding-top:20px;
-    padding-bottom:25px;
+   
   
+  }
+  li{
+    margin-top:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:15px;
   }
   a:hover{
   transition:.4sec;
@@ -38,17 +79,31 @@
   }
   button:hover{
   text-decoration: underline;
-  background: transparent;
+  background:whitesmoke;
     font-weight: bold;
     transition-delay: .1s;
   }
   .left{
+    color:aliceblue;
   float:left;
-  
+  font-size:18px;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
   }
   .right{
+    color:aliceblue;
   float:right;
-  
+  font-size:18px;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  }
+  .footing{
+  text-align:center;
+  font-size:18px;
+  text-shadow: 0px 1px 1px rgb(0, 0, 0);
+  position:fixed;
+  background:rgb(248, 243, 220);
+  border:1px solid black;
+  bottom:5%;
+  left:20%;
   }
   input{
     width:115px;
@@ -62,9 +117,7 @@
   
   
   
-  * {
-    box-sizing: border-box;
-  }
+  
   
   /* Grid measurements:
    *

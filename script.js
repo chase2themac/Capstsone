@@ -2,8 +2,7 @@
 
 const base="https://newsapi.org/v2/"
 const key="apiKey=27eda7ba8e8f496bb3360c5d192f2299"
-if ($('#option1or2').val()== "everything?")  document.getElementById("cC").disabled = true;
-if ($('#option1or2').val()== "top-headlines?")document.getElementById("cC").disabled = false;
+
 function formatParams(){
   let params= [];  
 
@@ -12,7 +11,7 @@ function formatParams(){
 
   if ($('.searchQ').val() != "") params.push("q="+$('.searchQ').val()+"&");
 
-  if ($('.countrySearch').val() != "") params.push("country="
+  if ($('.countrySearch').val() != "" && $('#option1or2').val() != "everything?") params.push("country="
   +$('.countrySearch').val()+"&");
 
   if ($('#catagories').val() != "none")params.push("catagory="+$('#catagories').val()+"&");
@@ -28,6 +27,7 @@ function displayResults(responseJson){
 
   console.log(responseJson);
 
+  $('.err').empty();
   $('.printResults').empty();
 
   for (let i = 0; i < responseJson.articles.length; i++){
@@ -38,12 +38,14 @@ function displayResults(responseJson){
     let month = date.getMonth()+1;
     let dateStr = month+"/"+day+"/"+year;
 
+
     $('.printResults').append(
-      `<li class="hmm"><div class="articleHead col-12"><h3><a href="${responseJson.articles[i].url}">${responseJson.articles[i].title}</a></h3>
+      `<li class="hmm"><div class="articleHead row"><h3><a href="${responseJson.articles[i].url}">${responseJson.articles[i].title}</a></h3>
       <p>${responseJson.articles[i].author}</p><p><a href="${responseJson.articles[i].url}">
       Link to Article</a></p>
-      <p>${dateStr}</p></div><div class="articleBody col-12">
-      <img src='${responseJson.articles[i].urlToImage}' class="pParker" width="500px" height="300px" alt="photo from article of news"/><br>
+      <p>${dateStr}</p></div><br>
+      <div class="articleBody row ">
+      <img src='${responseJson.articles[i].urlToImage}' class="pParker"alt="photo from article of news"/><br>
       <p>${responseJson.articles[i].description}</p>
       </div>
       </li>`
