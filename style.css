@@ -1,193 +1,261 @@
 *{
 
-    box-sizing: border-box;
-  }
-  html{ 
-    background: url('https://journalistsresource.org/wp-content/uploads/2018/06/bundle-1853667_1280-720x480.jpg?x12809') no-repeat center center fixed;
-  background-size:cover;
-  color:rgb(62, 2, 2);
-  
-  
-  }
-  
-  .header{
-    background:rgb(248, 243, 220);
-  }
-  
-  .hidden{
-    display:none;
-  }
-  .header{
-    text-align:center;
-    border:3px solid black;
-    
-  }
-  .err{
-     color:aliceblue;
-    text-shadow: 1px 2px 2px rgb(0, 0, 0);
-  }
-  .nR{
-    color:aliceblue;
-    text-shadow: 1px 2px 2px rgb(0, 0, 0);
-  }
-  .printResults{
-    color:aliceblue;
-    list-style:none;
-    text-shadow: 1px 2px 2px rgb(0, 0, 0);
-  }
-  .pParker{
-    float:right; 
-  
-    padding-top: 20px;
-    padding-bottom:20px;
-    width:270px;
-    height:300px;
-  }
-  
-  section{
-    display:inline-block;
-  }
-  a{
-   color:rgb(0, 0, 0);
-    text-shadow: 1px 1px 1px rgb(127, 56, 56);
-  }
-  .articleHead{
-     color:rgb(0, 0, 0);
-    text-shadow: 0px 0px 0px rgb(32, 1, 1);
-    font-size:18px;
-    text-align:center;
-    border:1px solid black;
-    background: url('https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center  ;
-  background-size:cover;
-  }
-  .articleBody{
-    text-shadow: 1px 2px 2px rgb(0, 0, 0);
-    font-size:18px;
-    text-align:center;
-   
-  
-  }
-  li{
-    margin-top:15px;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-bottom:15px;
-  }
-  a:hover{
-  transition:.4sec;
-  text-decoration:dashed;
-  }
-  button:hover{
-  text-decoration: underline;
-  background:whitesmoke;
-    font-weight: bold;
-    transition-delay: .1s;
-  }
-  .left{
-    color:aliceblue;
-  float:left;
-  font-size:18px;
-  text-shadow: 1px 2px 2px rgb(0, 0, 0);
-  }
-  .right{
-    color:aliceblue;
-  float:right;
-  font-size:18px;
-  text-shadow: 1px 2px 2px rgb(0, 0, 0);
-  }
-  .footing{
+  box-sizing: border-box;
+}
+
+html{ 
+  background: url('https://thejewishnews.com/wp-content/uploads/2018/09/books-2596809_960_720.jpg') no-repeat center center fixed;
+background-size:cover;
+color:rgb(62, 2, 2);
+}
+
+
+.hidden{
+  display:none;
+}
+
+.header{
+
+  background:rgb(236, 236, 236, 0.4);
   text-align:center;
+  border:3px solid black;
+  color:aliceblue;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+margin:0 auto;
+}
+
+.err{
+   color:aliceblue;
+  
+}
+
+.nR{
+  text-align:center;
+  color:aliceblue;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.openArticle{
+  border:ridge 6px gainsboro;
+  background:rgb(236, 236, 236, 0.5);
+  float:right;
+  width:75%;
+  font-size:22px;
+    color:aliceblue;
+  list-style:none;
+
+}
+
+.openingStatement1{
+  padding-top:25px;
+  margin-top:10%;
+  text-align: center;
+    color:aliceblue;
+    font-size:45px;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.openingStatement2{
+
+    color:aliceblue;
+    margin-left:20%;
+    margin-right:15%;
+    font-size:26px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.printResults{
+  color:aliceblue;
+  list-style:none;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.pParker{
+  padding-top: 20px;
+  padding-bottom:20px;
+  width:100%;
+  height:300px;
+}
+
+.toEverything,.toTop{
+  
+  font-size:23px;
+  background:antiquewhite;
+}
+
+section{
+  display:inline-block;
+}
+
+a{
+  color:rgb(236, 236, 236);
+  text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
+.articleCount{
+width:100%;
+  font-size:20px;
+  font-weight:bold;
+text-align:center;
+
+}
+
+.articleHead{
+  color:rgb(237, 237, 237);
+  text-shadow: 1px 2px 1px rgb(0, 0, 0);
   font-size:18px;
-  text-shadow: 0px 1px 1px rgb(0, 0, 0);
-  position:fixed;
-  background:rgb(248, 243, 220);
+  text-align:center;
   border:1px solid black;
-  bottom:5%;
-  left:20%;
-  }
-  input{
-    width:115px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Grid measurements:
+  background: url('https://cdn20.patchcdn.com/users/21854731/20180522/022240/styles/T800x600/public/processed_images/books_library_desk_shutterstock_192933773-1527013247-9015.jpg') center;
+background-size:cover;
+}
+.article{
+   border:ridge 6px gainsboro;
+  background:rgb(211, 211, 211, 0.5);
+}
+.articleBody{
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  font-size:22px;
+  text-align:center;
+
+
+}
+
+li{
+  list-style:none;
+  display:inline-block;
+
+}
+
+a:hover{
+transition:.4sec;
+text-decoration:dashed;
+}
+
+button:hover{
+text-decoration: underline;
+background:turquoise;
+  font-weight: bold;
+  transition-delay: .1s;
+}
+
+.beginFetch{
+  text-align:center;
+  float:right;
+  width:110px;
+  height:40px;
+  font-size:23px;
+  background:antiquewhite;
+  margin-right:20px;
+}
+
+
+.left{
+color:aliceblue;
+font-size:22px;
+text-shadow: 1px 2px 2px rgb(0, 0, 0);
+width:30%;
+margin-bottom:30px;
+
+}
+
+.footing{
+  color:black;
+text-align:left;
+font-size:20px;
+font-weight:bold;
+text-shadow: 0px 1px 1px rgb(0, 0, 0);
+position:fixed;
+background:rgb(255, 1, 1);
+border:1px solid black;
+bottom:0%;
+margin:0 auto;
+
+}
+
+input{
+  width:115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Grid measurements:
+ *
+ *   960px wide including 12 gutters (half gutters on both edges)
+ *
+ *   60px columns (12)
+ *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
+ *
+ *
+ *   For smaller screens, we always want 20px of padding on either side,
+ *   so 960 + 20 + 20 => 1000px
+ *
+ **/
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
    *
-   *   960px wide including 12 gutters (half gutters on both edges)
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
    *
-   *   60px columns (12)
-   *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
-   *
-   *
-   *   For smaller screens, we always want 20px of padding on either side,
-   *   so 960 + 20 + 20 => 1000px
-   *
-   **/
-  .row {
-    max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 320px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
   }
-  
-  /* Clearfix */
-  .row::before,
-  .row::after {
-    display: table;
-    content: '';
+
+  /* 4 columns */
+  .col-4 {
+    width: 33.33%;
   }
-  
-  .row::after {
-    clear: both;
+
+  /* 6 columns */
+  .col-6 {
+    width:50%;
+
   }
-  
-  .col-3, .col-4, .col-6, .col-12 {
-    float: left;
-  
-    /* Gutters:
-     * Each column is padded by half-a-gutter on each side,
-     *
-     * Half a gutter is 10px, 10/960 (context) = 1.041666%
-     *
-     */
-    padding-left: 1.04166666%;
-    padding-right: 1.04166666%;
+
+  /* 12 columns */
+  .col-12 {
+    width:100%;
   }
-  
-  /* Mobile defaults */
-  .col-3, .col-4, .col-6, .col-12 {
-    width: 100%;
-  }
-  
-  
-  /* Non-mobile, grid */
-  @media only screen and (min-width: 320px) {
-    /* 3 columns, 3/12 in % */
-    .col-3 {
-      width: 25%;
-    }
-  
-    /* 4 columns */
-    .col-4 {
-      width: 33.33%;
-    }
-  
-    /* 6 columns */
-    .col-6 {
-      width:50%;
-  
-    }
-  
-    /* 12 columns */
-    .col-12 {
-      width:100%;
-    }
-  }
+}
