@@ -10,3 +10,6 @@ For general ease there will not be a source selection, but there will be availib
 There will also be an optional "catagory" selection in which the user can even specify what type of catagory they wish to search-
 -from all the possible catagories the api can do such as "business, entertainment, general, health, science, sports, technology"-
 -but of course that is optional.
+  
+  
+  https://chase2themac.github.io/Capstsone/
