@@ -57,8 +57,8 @@ $('.printResults').append(`<li role="listitem" class="articleCount row">Total av
     
 
     $('.printResults').append(
-      `<li  role="listitem" class="hmm"><div class="article"><div class="articleHead row"><h2><a href="${responseJson.articles[i].url}">${responseJson.articles[i].title}</a></h3>
-      <p>${responseJson.articles[i].author}</p><p role="link"><a  href="${responseJson.articles[i].url}">
+      `<li  role="listitem" class="hmm"><div class="article"><div class="articleHead row"><h2><a href="${responseJson.articles[i].url}" target="_blank" >${responseJson.articles[i].title}</a></h3>
+      <p>${responseJson.articles[i].author}</p><p role="link"><a  href="${responseJson.articles[i].url}" target="_blank">
       Link to Article</a></p>
       <p class="dateColor">${dateStr}</p></div><div class="toTheRight">
       <p >${responseJson.articles[i].description}</p>
@@ -82,8 +82,8 @@ console.log(responseJson);
     let dateStr = month+"/"+day+"/"+year;
 
       $('.openArticle').append(
-      `<li role="listitem" class="hmm"><div class="articleHead row"><h2><a href="${responseJson.articles[i].url}">${responseJson.articles[i].title}</a></h3>
-      <p>${responseJson.articles[i].author}</p><p role="link"><a  class="dateColor" href="${responseJson.articles[i].url}">
+      `<li role="listitem" class="hmm"><div class="articleHead row"><h2><a href="${responseJson.articles[i].url}" target="_blank">${responseJson.articles[i].title}</a></h3>
+      <p>${responseJson.articles[i].author}</p><p role="link"><a  class="dateColor" href="${responseJson.articles[i].url}" target="_blank">
       Link to Article </a></p>
       <p class="dateColor">${dateStr}</p></div>
       <img src='${responseJson.articles[i].urlToImage}' class="pParker" alt="photo from article of news"/><div class="toTheRight">
